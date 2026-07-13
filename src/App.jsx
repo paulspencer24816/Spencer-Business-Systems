@@ -1258,10 +1258,10 @@ function DemoCalendlySection() {
               <div className="h-12 w-12 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center mb-6 group-hover:bg-primary transition">
                 <LayoutDashboard className="h-5 w-5 text-primary group-hover:text-white" />
               </div>
-              <h3 className="font-display font-bold text-2xl mb-2">See a live dashboard</h3>
+              <h3 className="font-display font-bold text-2xl mb-2">See a sample dashboard</h3>
               <p className="text-white/60 text-sm leading-relaxed mb-6">
-                Walk through a real client dashboard: automations, AI agents, and everything in
-                one view.
+                Explore a preview built from a real client system: automations, AI agents, and
+                everything in one view.
               </p>
               <span className="inline-flex items-center gap-1.5 text-accent font-semibold text-sm">
                 View demo

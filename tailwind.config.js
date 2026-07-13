@@ -21,6 +21,8 @@ export default {
         serif: ['"Cormorant Garamond"', 'serif'],
         body: ['"Inter"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
+        'dash-display': ['"Fraunces"', 'serif'],
+        'dash-body': ['"Public Sans"', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         '2.5xl': '1.25rem',
