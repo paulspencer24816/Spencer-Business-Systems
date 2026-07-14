@@ -1240,57 +1240,50 @@ function DemoCalendlySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <span className="font-mono text-xs uppercase tracking-[0.25em] text-primary-dark">
-            ╱ See it, or book it
+            ╱ See it in action
           </span>
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl md:text-5xl text-ink mt-3 tracking-tight">
-            Two ways to get started.
+            Explore a real dashboard.
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <Link
-            to="/dashboard-demo"
-            className="group relative bg-deep text-white rounded-4xl p-8 sm:p-10 overflow-hidden hover:-translate-y-1 transition-transform duration-500 shadow-xl shadow-primary/10"
-          >
-            <div className="absolute inset-0 grid-bg opacity-10" />
-            <div className="relative">
+        <Link
+          to="/dashboard-demo"
+          className="group relative block max-w-5xl mx-auto bg-deep text-white rounded-5xl overflow-hidden hover:-translate-y-1 transition-transform duration-500 shadow-2xl shadow-primary/10"
+        >
+          <div className="absolute inset-0 grid-bg opacity-10" />
+          <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
+          <div className="relative grid md:grid-cols-5 items-center">
+            <div className="md:col-span-3 p-10 sm:p-14">
               <div className="h-12 w-12 rounded-2xl bg-primary/20 border border-primary/30 flex items-center justify-center mb-6 group-hover:bg-primary transition">
                 <LayoutDashboard className="h-5 w-5 text-primary group-hover:text-white" />
               </div>
-              <h3 className="font-display font-bold text-2xl mb-2">See a sample dashboard</h3>
-              <p className="text-white/60 text-sm leading-relaxed mb-6">
-                Explore a preview built from a real client system: automations, AI agents, and
-                everything in one view.
+              <h3 className="font-display font-bold text-2xl sm:text-3xl mb-3">
+                See a sample dashboard
+              </h3>
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-8 max-w-md">
+                Explore a live preview built from a real client system: automations, AI agents,
+                and everything in one view.
               </p>
-              <span className="inline-flex items-center gap-1.5 text-accent font-semibold text-sm">
+              <span className="inline-flex items-center gap-2 bg-accent text-deep font-semibold text-sm px-6 py-3 rounded-full">
                 View demo
                 <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </span>
             </div>
-          </Link>
 
-          <a
-            href="https://calendly.com/pauljohnsonspencer/30min?back=1&month=2026-07"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative bg-primary text-white rounded-4xl p-8 sm:p-10 overflow-hidden hover:-translate-y-1 transition-transform duration-500 shadow-xl shadow-primary/20"
-          >
-            <div className="relative">
-              <div className="h-12 w-12 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center mb-6 group-hover:bg-white transition">
-                <Calendar className="h-5 w-5 text-white group-hover:text-primary" />
+            <div className="hidden md:flex md:col-span-2 h-full items-center justify-center p-10 border-l border-white/10">
+              <div className="w-full space-y-2.5">
+                <div className="h-3 w-2/3 rounded-full bg-white/15" />
+                <div className="h-16 rounded-2xl bg-white/10 border border-white/10" />
+                <div className="grid grid-cols-2 gap-2.5">
+                  <div className="h-14 rounded-xl bg-primary/25 border border-primary/30" />
+                  <div className="h-14 rounded-xl bg-white/10 border border-white/10" />
+                </div>
+                <div className="h-3 w-1/2 rounded-full bg-white/15" />
               </div>
-              <h3 className="font-display font-bold text-2xl mb-2">Book a call</h3>
-              <p className="text-white/70 text-sm leading-relaxed mb-6">
-                Pick a 30-minute slot on the calendar and we&rsquo;ll talk through your business
-                directly.
-              </p>
-              <span className="inline-flex items-center gap-1.5 text-white font-semibold text-sm">
-                Open Calendly
-                <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </span>
             </div>
-          </a>
-        </div>
+          </div>
+        </Link>
       </div>
     </section>
   )
@@ -1398,13 +1391,38 @@ function ContactForm() {
               </div>
             </div>
 
-            <div className="mt-10 p-5 rounded-3xl bg-primary/5 border border-primary/15">
-              <p className="font-mono text-[10px] uppercase tracking-widest text-primary-dark mb-2">
-                Scheduling
-              </p>
-              <p className="text-sm text-muted leading-relaxed">
-                Hours vary, book a call and pick a time that works for you.
-              </p>
+            <div className="mt-10 grid sm:grid-cols-2 gap-4">
+              <div className="p-5 rounded-3xl bg-primary/5 border border-primary/15">
+                <p className="font-mono text-[10px] uppercase tracking-widest text-primary-dark mb-2">
+                  Scheduling
+                </p>
+                <p className="text-sm text-muted leading-relaxed">
+                  Hours vary, book a call and pick a time that works for you.
+                </p>
+              </div>
+
+              <a
+                href="https://calendly.com/pauljohnsonspencer/30min?back=1&month=2026-07"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group p-5 rounded-3xl bg-primary text-white flex flex-col justify-between hover:-translate-y-0.5 transition-transform duration-300 shadow-lg shadow-primary/25"
+              >
+                <div>
+                  <span className="h-9 w-9 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center mb-3 group-hover:bg-white transition">
+                    <Calendar className="h-4 w-4 text-white group-hover:text-primary" />
+                  </span>
+                  <p className="font-mono text-[10px] uppercase tracking-widest text-white/70 mb-1">
+                    Prefer to skip the form?
+                  </p>
+                  <p className="font-display font-semibold text-sm leading-relaxed">
+                    Book a 30-minute call directly on Calendly.
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-1.5 text-white font-semibold text-sm mt-4">
+                  Open Calendly
+                  <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </span>
+              </a>
             </div>
           </div>
 
