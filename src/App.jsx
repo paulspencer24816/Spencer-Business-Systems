@@ -1383,7 +1383,7 @@ function ContactForm() {
               </a>
 
               <a
-                href="mailto:paulspencer24816@gmail.com"
+                href="mailto:support@spencerbusinesssystems.com"
                 className="lift-on-hover flex items-center gap-4 group"
               >
                 <span className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary transition">
@@ -1394,7 +1394,7 @@ function ContactForm() {
                     Email
                   </span>
                   <span className="font-display font-semibold text-ink text-lg break-all">
-                    paulspencer24816@gmail.com
+                    support@spencerbusinesssystems.com
                   </span>
                 </span>
               </a>
@@ -1660,10 +1660,10 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:paulspencer24816@gmail.com"
+                  href="mailto:support@spencerbusinesssystems.com"
                   className="text-white/65 hover:text-accent transition text-sm break-all"
                 >
-                  paulspencer24816@gmail.com
+                  support@spencerbusinesssystems.com
                 </a>
               </li>
               <li className="text-white/65 text-sm">Milwaukee to Madison Area, WI</li>

@@ -27,8 +27,8 @@ export default function PrivacyPolicy() {
           <h2 className="font-display text-xl font-semibold text-ink pt-4">Contact</h2>
           <p>
             Questions about this policy can be sent to{' '}
-            <a href="mailto:paulspencer24816@gmail.com" className="text-primary lift-on-hover">
-              paulspencer24816@gmail.com
+            <a href="mailto:support@spencerbusinesssystems.com" className="text-primary lift-on-hover">
+              support@spencerbusinesssystems.com
             </a>.
           </p>
         </div>
