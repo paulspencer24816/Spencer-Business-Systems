@@ -1346,6 +1346,29 @@ function ContactForm() {
               a dashboard could look like for your business.
             </p>
 
+            <a
+              href="https://calendly.com/pauljohnsonspencer/30min?back=1&month=2026-07"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative mt-8 flex items-center gap-5 p-6 rounded-3xl bg-primary text-white overflow-hidden hover:-translate-y-0.5 transition-transform duration-300 shadow-xl shadow-primary/30 ring-pulse"
+            >
+              <span className="h-14 w-14 shrink-0 rounded-2xl bg-white/15 border border-white/25 flex items-center justify-center group-hover:bg-white transition">
+                <Calendar className="h-6 w-6 text-white group-hover:text-primary" />
+              </span>
+              <span className="flex-1">
+                <span className="block font-mono text-[10px] uppercase tracking-widest text-white/70 mb-1">
+                  Prefer to skip the form?
+                </span>
+                <span className="block font-display font-bold text-lg leading-snug">
+                  Book a 30-minute call directly on Calendly
+                </span>
+              </span>
+              <span className="hidden sm:inline-flex items-center gap-1.5 bg-white text-primary font-semibold text-sm px-4 py-2.5 rounded-full shrink-0">
+                Open
+                <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </span>
+            </a>
+
             <div className="mt-10 space-y-4">
               <a href="tel:3044455706" className="lift-on-hover flex items-center gap-4 group">
                 <span className="h-12 w-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary transition">
@@ -1391,38 +1414,13 @@ function ContactForm() {
               </div>
             </div>
 
-            <div className="mt-10 grid sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-3xl bg-primary/5 border border-primary/15">
-                <p className="font-mono text-[10px] uppercase tracking-widest text-primary-dark mb-2">
-                  Scheduling
-                </p>
-                <p className="text-sm text-muted leading-relaxed">
-                  Hours vary, book a call and pick a time that works for you.
-                </p>
-              </div>
-
-              <a
-                href="https://calendly.com/pauljohnsonspencer/30min?back=1&month=2026-07"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group p-5 rounded-3xl bg-primary text-white flex flex-col justify-between hover:-translate-y-0.5 transition-transform duration-300 shadow-lg shadow-primary/25"
-              >
-                <div>
-                  <span className="h-9 w-9 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center mb-3 group-hover:bg-white transition">
-                    <Calendar className="h-4 w-4 text-white group-hover:text-primary" />
-                  </span>
-                  <p className="font-mono text-[10px] uppercase tracking-widest text-white/70 mb-1">
-                    Prefer to skip the form?
-                  </p>
-                  <p className="font-display font-semibold text-sm leading-relaxed">
-                    Book a 30-minute call directly on Calendly.
-                  </p>
-                </div>
-                <span className="inline-flex items-center gap-1.5 text-white font-semibold text-sm mt-4">
-                  Open Calendly
-                  <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </span>
-              </a>
+            <div className="mt-10 p-5 rounded-3xl bg-primary/5 border border-primary/15">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-primary-dark mb-2">
+                Scheduling
+              </p>
+              <p className="text-sm text-muted leading-relaxed">
+                Hours vary, book a call and pick a time that works for you.
+              </p>
             </div>
           </div>
 
