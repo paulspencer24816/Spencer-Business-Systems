@@ -343,9 +343,9 @@ function Hero() {
 ---------------------------------------------------------------- */
 function BuildShuffler() {
   const items = [
-    { tag: 'Website', label: 'Custom-coded site, built for conversion', Icon: Globe },
-    { tag: 'Automation', label: 'Workflows that remove manual busywork', Icon: Workflow },
-    { tag: 'AI Agent', label: 'Assistants that handle real tasks', Icon: Bot },
+    { tag: 'Website', label: 'Custom-coded site', Icon: Globe },
+    { tag: 'Automation', label: 'Workflows that remove busywork', Icon: Workflow },
+    { tag: 'AI Agent', label: 'Assistants that handle tasks', Icon: Bot },
     { tag: 'Dashboard', label: 'One place to run and monitor it all', Icon: LayoutDashboard },
   ]
   const [stack, setStack] = useState(items)
@@ -678,7 +678,7 @@ function Features() {
       eyebrow: 'Live status',
       heading: 'Systems, Monitored',
       sub: 'Always-on visibility',
-      text: "Once it's live, you're not left guessing. Automations run in the background and the dashboard shows exactly what's happening, in real time.",
+      text: "Automations run in the background and the dashboard shows exactly what's happening, in real time.",
       bullets: ['Status updates as work happens', 'No silent failures', 'Everything is traceable'],
       Component: NetworkStatus,
     },
@@ -819,11 +819,11 @@ function Pillars() {
     },
     {
       n: '02',
-      title: 'One system',
-      end: 5,
-      suffix: '',
-      label: 'Core services',
-      desc: 'Websites, automations, AI agents, dashboards, and ongoing support. One system, one point of contact.',
+      title: 'Always running',
+      end: 24,
+      suffix: '/7',
+      label: 'Automations live',
+      desc: 'Automations and AI agents keep working around the clock, not just nine-to-five.',
     },
     {
       n: '03',
@@ -859,8 +859,7 @@ function Pillars() {
             </h2>
           </div>
           <p className="text-muted text-lg leading-relaxed max-w-md lg:text-right">
-            This is a new studio: one person, no fabricated track record. Here&rsquo;s exactly
-            what you get instead.
+            No fabricated track record, no inflated claims. Here&rsquo;s exactly what you get.
           </p>
         </div>
 
@@ -935,7 +934,7 @@ function Protocol() {
             scrub: 1,
           },
           scale: 0.92,
-          filter: 'blur(6px) saturate(0.7)',
+          filter: 'blur(6px)',
           opacity: 0.5,
           ease: 'none',
         })
@@ -1009,7 +1008,7 @@ function Protocol() {
             key={idx}
             className="protocol-card sticky top-24 sm:top-28 mx-auto max-w-6xl bg-gradient-to-br from-surface to-background border border-divider rounded-6xl overflow-hidden shadow-2xl shadow-primary/5"
           >
-            <div className="grid lg:grid-cols-5 gap-0 min-h-[60vh] lg:min-h-[70vh]">
+            <div className="grid lg:grid-cols-5 gap-0 min-h-[48vh] lg:min-h-[54vh]">
               <div className="lg:col-span-3 p-8 sm:p-12 lg:p-16 flex flex-col justify-between">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
@@ -1404,7 +1403,7 @@ function ContactForm() {
                 Scheduling
               </p>
               <p className="text-sm text-muted leading-relaxed">
-                Hours vary week to week. Book a call and pick a time that works.
+                Hours vary, book a call and pick a time that works for you.
               </p>
             </div>
           </div>
