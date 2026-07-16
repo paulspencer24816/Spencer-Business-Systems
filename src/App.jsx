@@ -682,7 +682,7 @@ function Features() {
       text: "Automations run on their own in the background. If you want one place to see what's happening and switch things on or off, the dashboard shows it all live.",
       bullets: ['See every automation running, live', 'Turn things on or off without touching code', 'Optional — automations work fine without it'],
       Component: NetworkStatus,
-      link: { href: '#demo', label: 'See a live dashboard demo' },
+      link: { href: '#demo', label: 'See a dashboard demo' },
     },
     {
       eyebrow: '03 / Get started',
@@ -1277,7 +1277,7 @@ function DemoCalendlySection() {
                 See a sample dashboard
               </h3>
               <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-8 max-w-md">
-                Explore a live preview built from a real client system: automations, AI agents,
+                Explore a demo built from a real client system: automations, AI agents,
                 and everything in one view.
               </p>
               <span className="inline-flex items-center gap-2 bg-accent text-deep font-semibold text-sm px-6 py-3 rounded-full">
