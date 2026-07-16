@@ -299,17 +299,18 @@ function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-32 pb-20 min-h-[100dvh] flex flex-col justify-end">
         <p className="hero-meta font-mono text-xs uppercase tracking-[0.25em] text-white/70 mb-6">
-          Websites · Automations · Dashboards
+          Automations · AI Agents · Websites · Dashboards
         </p>
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[0.95] max-w-5xl">
-          <span className="hero-line-1 block">One system for</span>
+          <span className="hero-line-1 block">Automations that save you</span>
           <span className="hero-line-2 block font-serif italic font-medium">
-            your whole business.
+            real time and real money.
           </span>
         </h1>
         <p className="hero-meta mt-8 max-w-xl text-white/70 text-base sm:text-lg leading-relaxed">
-          Spencer Business Systems builds the site, wires up the automations, and gives
-          you a dashboard to run it all, so you&rsquo;re not juggling five different tools.
+          Spencer Business Systems builds automations that quietly take work off your plate.
+          A custom website and a dashboard to watch it all are there if you want them, not
+          because you need them.
         </p>
         <div className="hero-cta mt-10 flex flex-wrap gap-3">
           <a
@@ -339,14 +340,13 @@ function Hero() {
 }
 
 /* ----------------------------------------------------------------
-   Feature Card 1 — Build Shuffler
+   Feature Card 1 — Website Shuffler
 ---------------------------------------------------------------- */
-function BuildShuffler() {
+function WebsiteShuffler() {
   const items = [
-    { tag: 'Website', label: 'Custom-coded site', Icon: Globe },
-    { tag: 'Automation', label: 'Workflows that remove busywork', Icon: Workflow },
-    { tag: 'AI Agent', label: 'Assistants that handle tasks', Icon: Bot },
-    { tag: 'Dashboard', label: 'One place to run and monitor it all', Icon: LayoutDashboard },
+    { tag: 'Website', label: 'Custom-coded, not a template', Icon: Globe },
+    { tag: 'Optional', label: 'Wire it into your dashboard if you want', Icon: LayoutDashboard },
+    { tag: 'Built for you', label: 'Designed around your business, not a theme', Icon: CheckCircle2 },
   ]
   const [stack, setStack] = useState(items)
 
@@ -667,26 +667,27 @@ function Features() {
 
   const cards = [
     {
-      eyebrow: '01 / What gets built',
-      heading: 'The Build',
-      sub: 'Website → automation → AI → dashboard',
-      text: 'Everything is designed to click together. The site feeds the automations, the automations feed the agents, and the dashboard shows it all in one place.',
-      bullets: ['Custom-coded, not templated', 'Automations wired to your tools', 'One dashboard to see it all'],
-      Component: BuildShuffler,
+      eyebrow: '01 / Website — optional',
+      heading: 'The Website',
+      sub: 'Custom-coded, wireable into your dashboard',
+      text: "If you want a new site, it's built custom for your business and can be wired into your automations and dashboard. If you don't, everything else still runs on its own.",
+      bullets: ['Custom-coded, not a template', 'Optional — connect it to your dashboard if you want', 'Never required for automations to work'],
+      Component: WebsiteShuffler,
     },
     {
-      eyebrow: 'Live status',
-      heading: 'Systems, Monitored',
-      sub: 'Always-on visibility',
-      text: "Automations run in the background and the dashboard shows exactly what's happening, in real time.",
-      bullets: ['Status updates as work happens', 'No silent failures', 'Everything is traceable'],
+      eyebrow: '02 / Dashboard — optional',
+      heading: 'The Dashboard',
+      sub: 'View and control your automations',
+      text: "Automations run on their own in the background. If you want one place to see what's happening and switch things on or off, the dashboard shows it all live.",
+      bullets: ['See every automation running, live', 'Turn things on or off without touching code', 'Optional — automations work fine without it'],
       Component: NetworkStatus,
+      link: { href: '#demo', label: 'See a live dashboard demo' },
     },
     {
       eyebrow: '03 / Get started',
       heading: 'Book a 20-Minute Call',
       sub: 'No sales pitch, just a plan',
-      text: "Pick a time, tell me what's slowing you down, and leave with a clear plan for what a custom site and automations would look like for your business.",
+      text: "Pick a time, tell me what's slowing you down, and leave with a clear plan for what automations, and a website or dashboard if you want them, would look like for your business.",
       bullets: ['20 minutes, no obligation', 'Straight answers on scope & cost', 'Direct line to the person building it'],
       Component: BookingScheduler,
     },
@@ -700,7 +701,7 @@ function Features() {
             ╱ How it comes together
           </span>
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-ink mt-4 leading-[1.05] tracking-tight">
-            Four pieces.
+            Pick what you need.
             <span className="block font-serif italic font-medium text-primary-dark mt-1">
               One system.
             </span>
@@ -739,6 +740,15 @@ function Features() {
                     </li>
                   ))}
                 </ul>
+                {card.link && (
+                  <a
+                    href={card.link.href}
+                    className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary-dark lift-on-hover"
+                  >
+                    {card.link.label}
+                    <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.2} />
+                  </a>
+                )}
               </div>
             </article>
           ))}
@@ -815,7 +825,7 @@ function Pillars() {
       end: 100,
       suffix: '%',
       label: 'Custom-built',
-      desc: 'Every site, automation, and agent is built for your business specifically. Never a template.',
+      desc: 'Every site, automation, and agent is built for your business specifically.',
     },
     {
       n: '02',
@@ -823,15 +833,15 @@ function Pillars() {
       end: 24,
       suffix: '/7',
       label: 'Automations live',
-      desc: 'Automations and AI agents keep working around the clock, not just nine-to-five.',
+      desc: 'Automations and AI agents keep working around the clock.',
     },
     {
       n: '03',
-      title: 'No hand-offs',
+      title: 'Direct line',
       end: 1,
       suffix: '',
-      label: 'Direct line',
-      desc: 'You work directly with the person building your systems. No account managers, no hand-offs.',
+      label: 'Point of contact',
+      desc: 'You work directly with the person building your systems.',
     },
   ]
 
@@ -849,17 +859,18 @@ function Pillars() {
         >
           <div className="max-w-2xl">
             <span className="inline-block font-mono text-xs uppercase tracking-[0.3em] text-primary-dark mb-5">
-              ╱ The honest numbers
+              ╱ The standard
             </span>
             <h2 className="font-display font-extrabold text-4xl sm:text-5xl md:text-6xl text-ink leading-[1.05] tracking-tight">
-              No inflated stats.
+              Built right.
               <span className="block font-serif italic font-medium text-primary-dark">
-                Just how it works.
+                Every time.
               </span>
             </h2>
           </div>
           <p className="text-muted text-lg leading-relaxed max-w-md lg:text-right">
-            No fabricated track record, no inflated claims. Here&rsquo;s exactly what you get.
+            Every system is custom-built, runs around the clock, and comes with direct
+            access to the person who built it.
           </p>
         </div>
 
@@ -962,11 +973,11 @@ function Protocol() {
       num: '02',
       title: 'Build',
       tagline: 'We wire it together.',
-      text: 'The website, automations, and AI agents get built and wired together as one system.',
+      text: 'Automations and AI agents get built and wired together as one system, a website is added only if you want one.',
       bullets: [
-        'Custom-coded site, not a template',
         'Automations connected to the tools you already use',
         'AI agents trained on your actual processes',
+        'A custom-coded website, if you want one',
       ],
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
       alt: 'Code on a dark monitor',
@@ -1179,8 +1190,8 @@ function TrustSignals() {
     },
     {
       Icon: Zap,
-      title: 'Automations + AI, not just a site',
-      text: 'You get the website and the systems that make it actually run itself.',
+      title: 'Automations + AI, first',
+      text: 'The systems that actually run your business, day-to-day. A website is there too, if you want one.',
     },
     {
       Icon: MessageCircle,
