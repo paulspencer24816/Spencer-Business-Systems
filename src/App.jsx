@@ -302,15 +302,15 @@ function Hero() {
           Automations · AI Agents · Websites · Dashboards
         </p>
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[0.95] max-w-5xl">
-          <span className="hero-line-1 block">Automations that save you</span>
+          <span className="hero-line-1 block">Automations that save{' '}you</span>
           <span className="hero-line-2 block font-serif italic font-medium">
             real time and real money.
           </span>
         </h1>
         <p className="hero-meta mt-8 max-w-xl text-white/70 text-base sm:text-lg leading-relaxed">
-          Spencer Business Systems builds automations that quietly take work off your plate.
-          A custom website and a dashboard to watch it all are there if you want them, not
-          because you need them.
+          Spencer Business Systems builds automations that take work off your plate and a
+          dashboard to view and control them. Add a website, ongoing support, or anything
+          else your business needs.
         </p>
         <div className="hero-cta mt-10 flex flex-wrap gap-3">
           <a
@@ -667,12 +667,13 @@ function Features() {
 
   const cards = [
     {
-      eyebrow: '01 / Website — optional',
+      eyebrow: '01 / Website',
       heading: 'The Website',
-      sub: 'Custom-coded, wireable into your dashboard',
-      text: "If you want a new site, it's built custom for your business and can be wired into your automations and dashboard. If you don't, everything else still runs on its own.",
-      bullets: ['Custom-coded, not a template', 'Optional — connect it to your dashboard if you want', 'Never required for automations to work'],
+      sub: 'Custom-coded, wired into your dashboard',
+      text: 'Built custom for your business and wired straight into your automations and dashboard, so everything shows up in one place.',
+      bullets: ['Custom-coded, not a template', 'Wired into your automations and dashboard', 'Pages, forms, and booking, built around what you need'],
       Component: WebsiteShuffler,
+      note: "Optional — add one whenever you're ready.",
     },
     {
       eyebrow: '02 / Dashboard — optional',
@@ -748,6 +749,9 @@ function Features() {
                     {card.link.label}
                     <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.2} />
                   </a>
+                )}
+                {card.note && (
+                  <p className="mt-5 text-xs text-muted/80 italic">{card.note}</p>
                 )}
               </div>
             </article>
